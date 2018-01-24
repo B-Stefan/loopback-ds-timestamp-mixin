@@ -33,7 +33,7 @@ export default (Model, bootOptions = {}) => {
   Model.defineProperty(options.createdAt, {
     type: Date,
     required: options.required,
-    defaultFn: 'now',
+    defaultFn: '$now',
   });
 
   Model.defineProperty(options.updatedAt, {
